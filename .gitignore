@@ -1,2 +1,7 @@
 __pycache__/
+*.pyc
 .vscode/
+spectra_output/
+roi.json
+calibration.json
+.DS_Store
