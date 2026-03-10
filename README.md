@@ -22,7 +22,7 @@ q = quit
 
 1. Run the program.
 2. Press r and select the spectrum region.
-3. Use the violet laser and press s to get its pixel position.
+3. Use the violet laser and press s, then note the printed peak pixel.
 4. Use the sodium lamp and press s, then note the printed peak pixel.
 5. Use the red laser and press s, then note the printed peak pixel.
 6. Press 2 and enter the three pixel values to save the calibration.
