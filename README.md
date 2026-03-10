@@ -29,3 +29,13 @@ q = quit
 7. Use s for emission peaks.
 8. Use d for absorption dips such as Fraunhofer lines.
 9. Press p if you want to save the most recent analysed spectrum as a CSV file.
+
+## Calibration
+
+Calibration assumes the following reference wavelengths
+
+Calibration wavelengths used:
+
+violet laser = 405.0 nm
+sodium lamp = 589.3 nm
+red laser = 650.0 nm
