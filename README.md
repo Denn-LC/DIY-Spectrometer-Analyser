@@ -1,7 +1,10 @@
 # DIY Spectrometer Analyser
 3rd year physics spectrometry group project
 
-## Run
+Original project:
+https://github.com/kousheekc/DIY-Spectrometer-Analyser
+
+## How to run
 
 ```bash
 python spectrometer_app.py
