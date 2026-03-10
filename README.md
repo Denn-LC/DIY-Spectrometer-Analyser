@@ -1,4 +1,5 @@
 # DIY Spectrometer Analyser
+3rd year physics spectrometry group project
 
 ## Run
 
@@ -8,15 +9,23 @@ python spectrometer_app.py
 
 ## Controls
 
-r = select and save ROI
-x = clear saved ROI
-s = analyse emission peak
-d = analyse absorption dip
-1 = save 2-point calibration using violet laser and red laser
-2 = save 3-point calibration using violet laser, sodium lamp, and red laser
-l = show loaded calibration
-p = save last analysed spectrum as csv
-q = quit
+• r = select and save ROI
+
+• x = clear saved ROI
+
+• s = analyse emission peak
+
+• d = analyse absorption dip
+
+• 1 = save 2-point calibration using violet laser and red laser
+
+• 2 = save 3-point calibration using violet laser, sodium lamp, and red laser
+
+• l = show loaded calibration
+
+• p = save last analysed spectrum as csv
+
+• q = quit
 
 ## What to do
 
@@ -36,6 +45,8 @@ Calibration assumes the following reference wavelengths
 
 Calibration wavelengths used:
 
-violet laser = 405.0 nm
-sodium lamp = 589.3 nm
-red laser = 650.0 nm
+• violet laser = 405.0 nm
+
+• sodium lamp = 589.3 nm
+
+• red laser = 650.0 nm
