@@ -20,12 +20,12 @@ q = quit
 
 ## What to do
 
-1.Run the program.
-2.Press r and select the spectrum region.
-3.Use the violet laser and press s to get its pixel position.
-4.Use the sodium lamp and press s to get its pixel position.
-5.Use the red laser and press s to get its pixel position.
-6.Press 2 and enter the three pixel values to save the calibration.
-7.Use s for emission peaks.
-8.Use d for absorption dips such as Fraunhofer lines.
-9.Press p if you want to save the most recent analysed spectrum as a csv file.
+1. Run the program.
+2. Press r and select the spectrum region.
+3. Use the violet laser and press s to get its pixel position.
+4. Use the sodium lamp and press s, then note the printed peak pixel.
+5. Use the red laser and press s, then note the printed peak pixel.
+6. Press 2 and enter the three pixel values to save the calibration.
+7. Use s for emission peaks.
+8. Use d for absorption dips such as Fraunhofer lines.
+9. Press p if you want to save the most recent analysed spectrum as a CSV file.
