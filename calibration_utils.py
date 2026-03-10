@@ -7,8 +7,8 @@ CALIBRATION_FILE = "calibration.json"
 
 
 def fit_linear_calibration(pixel_positions, wavelengths):
-    pixel_positions = np.asarray(pixel_positions, dtype=float)
-    wavelengths = np.asarray(wavelengths, dtype=float)
+    pixel_positions = np.asarray(pixel_positions, dtype = float)
+    wavelengths = np.asarray(wavelengths, dtype = float)
 
     if len(pixel_positions) < 2:
         raise ValueError("Need at least 2 calibration points.")
@@ -39,20 +39,20 @@ def get_wavelength_axis(n_pixels, calibration):
     return wavelengths
 
 
-def save_calibration(calibration, points=None, calibration_file=CALIBRATION_FILE):
+def save_calibration(calibration, points = None, calibration_file = CALIBRATION_FILE):
     data = dict(calibration)
     if points is not None:
         data["points"] = points
 
     with open(calibration_file, "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=2)
+        json.dump(data, f, indent = 2)
 
 
-def load_calibration(calibration_file=CALIBRATION_FILE):
+def load_calibration(calibration_file = CALIBRATION_FILE):
     if not os.path.exists(calibration_file):
         return None
 
-    with open(calibration_file, "r", encoding="utf-8") as f:
+    with open(calibration_file, "r", encoding = "utf-8") as f:
         data = json.load(f)
 
     return data

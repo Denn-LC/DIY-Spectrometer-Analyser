@@ -8,8 +8,8 @@ import numpy as np
 OUTPUT_DIR = "spectra_output"
 
 
-def ensure_output_dir(output_dir=OUTPUT_DIR):
-    os.makedirs(output_dir, exist_ok=True)
+def ensure_output_dir(output_dir = OUTPUT_DIR):
+    os.makedirs(output_dir, exist_ok = True)
 
 
 def save_spectrum_csv(
@@ -18,9 +18,9 @@ def save_spectrum_csv(
     g_dist,
     b_dist,
     i_dist,
-    wavelengths=None,
-    prefix="spectrum",
-    output_dir=OUTPUT_DIR,
+    wavelengths = None,
+    prefix = "spectrum",
+    output_dir = OUTPUT_DIR,
 ):
     ensure_output_dir(output_dir)
 
@@ -42,11 +42,11 @@ def save_spectrum_csv(
 def plot_spectrum(
     cropped,
     spectrum_data,
-    feature_pixel=None,
-    wavelength=None,
-    feature_type="peak",
-    save_plot=True,
-    output_dir=OUTPUT_DIR,
+    feature_pixel = None,
+    wavelength = None,
+    feature_type = "peak",
+    save_plot =True,
+    output_dir = OUTPUT_DIR,
 ):
     ensure_output_dir(output_dir)
 
@@ -59,28 +59,28 @@ def plot_spectrum(
 
     cropped_rgb = cv2.cvtColor(cropped, cv2.COLOR_BGR2RGB)
 
-    plt.figure(figsize=(9, 6))
+    plt.figure(figsize = (9, 6))
 
     plt.subplot(2, 1, 1)
     plt.imshow(cropped_rgb)
-    plt.axhline(center_row, color="white", linestyle="--", linewidth=1)
-    plt.axhline(band_edges[0], color="yellow", linestyle=":", linewidth=1)
-    plt.axhline(band_edges[1] - 1, color="yellow", linestyle=":", linewidth=1)
+    plt.axhline(center_row, color="white", linestyle = "--", linewidth=1)
+    plt.axhline(band_edges[0], color="yellow", linestyle = ":", linewidth=1)
+    plt.axhline(band_edges[1] - 1, color="yellow", linestyle =":", linewidth=1)
     plt.title("Selected ROI")
     plt.axis("off")
 
     plt.subplot(2, 1, 2)
-    plt.plot(r_dist, color="r", label="red")
-    plt.plot(g_dist, color="g", label="green")
-    plt.plot(b_dist, color="b", label="blue")
-    plt.plot(i_dist, color="k", label="mean")
+    plt.plot(r_dist, color="r", label = "red")
+    plt.plot(g_dist, color="g", label = "green")
+    plt.plot(b_dist, color="b", label = "blue")
+    plt.plot(i_dist, color="k", label = "mean")
 
     if feature_pixel is not None:
         plt.axvline(
             feature_pixel,
-            color="m",
-            linestyle="--",
-            label=f"{feature_type} pixel = {feature_pixel:.2f}",
+            color = "m",
+            linestyle = "--",
+            label = f"{feature_type} pixel = {feature_pixel:.2f}",
         )
 
     title = "Spectrum Analysis"
@@ -90,7 +90,7 @@ def plot_spectrum(
     plt.xlabel("Pixel Position")
     plt.ylabel("Intensity")
     plt.title(title)
-    plt.legend(loc="upper left")
+    plt.legend(loc = "upper left")
     plt.tight_layout()
 
     plot_path = None

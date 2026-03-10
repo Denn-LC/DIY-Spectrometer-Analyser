@@ -13,6 +13,7 @@ from roi_utils import clear_roi, load_roi, save_roi
 from spectrum_utils import extract_spectrum, find_dip_pixel, find_peak_pixel
 
 CAMERA_INDEX = 0
+# if camera index 0 doesn't work, try 1 or 2
 DISPLAY_SCALE = 4
 
 
